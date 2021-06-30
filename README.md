@@ -1,0 +1,2 @@
+# OpenFOAM-Automated-Tool-Chain-PoC
+This project is a Proof of Concept (PoC) study. It is a starting point for a research with a much larger scope that is to create a certified digital wind tunnel. At this stage the aim was to define an automated simulation environment in OpenFOAM. The objective is to build a tool chain that automates the following operations: meshing, solving and post processing of a general purpose classical CFD simulation. The whole set-up is validated against a wealth of literature available for the "flow past cylinder" test case.
