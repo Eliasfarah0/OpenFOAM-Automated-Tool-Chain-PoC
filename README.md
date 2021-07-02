@@ -128,7 +128,7 @@ The following setup runs only on Python 3.X release and ESI version of OpenFOAM,
   ```
 
 
-## Case-Setup Rum
+## Case-Setup & Case Run
 When designing the tool chain, an Object-Oriented Programming (OOP) approach has been used. A class has been created for each of the stages in the simulation process discussed above. In addition to these classes, several other classes have been created in order to modularize the process of carrying out various tasks in the flow of activities of the tool chain. The relationship between these classes is given in the UML diagram seen below.
 ![](images/UML_diagram.png)
 
