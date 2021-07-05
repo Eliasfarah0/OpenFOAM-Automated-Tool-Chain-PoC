@@ -1,5 +1,5 @@
-[![PyPI license](https://img.shields.io/pypi/l/pygcs.svg)](https://pypi.python.org/pypi/pygcs/)
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.6.9](https://img.shields.io/badge/Made%20with-Python%203.6.9-blue.svg)](https://www.python.org/downloads/release/python-369/)
 
 # OpenFOAM Automated Tool Chain Proof of Concept (PoC) 
 ## Introduction
