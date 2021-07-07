@@ -71,7 +71,7 @@ Where:
 
 
 ## Reference Literature
-The flow past a cylinder test case has a wealth of literature to validate our setup. The laminar 2D/3D flow was validated against the results found in:
+The flow past a cylinder test case has a wealth of literature to validate our set-up. The laminar 2D/3D flow was validated against the results found in:
 - Rajani et al., "Numerical simulation of laminar flow past a circular cylinder", *Applied Mathematical Modelling*, 33(3), 2009 (https://doi.org/10.1016/j.apm.2008.01.017).
 
 And for high Reynolds number against the results found in:
@@ -79,7 +79,7 @@ And for high Reynolds number against the results found in:
 
 
 # Usage
-The following setup runs only on Python 3.X release and ESI version of OpenFOAM, where Python 3.6.9 version and OpenFOAM v1912 (using Ubuntu 18.04 LTS) were used for this project.
+The following set-up runs only on Python 3.X release and ESI version of OpenFOAM, where Python 3.6.9 version and OpenFOAM v1912 (using Ubuntu 18.04 LTS) were used for this project.
 
 ## Required Libraries & Packages
 - Step 1: OpenFOAM source package for the ESI version can be installed (using the full installation guide) and run using Bash on Ubuntu on Windows, usually this utility is referred to as the Windows Subsystem for Linux (WSL) which uses the genuine Ubuntu image provided by Canonical, via the following URL: https://www.openfoam.com/download/openfoam-installation-on-windows-10
@@ -128,7 +128,7 @@ The following setup runs only on Python 3.X release and ESI version of OpenFOAM,
   ```
 
 
-## Case-Setup & Case Run
+## Case Set-up & Case Run
 When designing the tool chain, an Object-Oriented Programming (OOP) approach has been used. A class has been created for each of the stages in the simulation process discussed above. In addition to these classes, several other classes have been created in order to modularize the process of carrying out various tasks in the flow of activities of the tool chain. The relationship between these classes is given in the UML diagram seen below.
 ![](images/UML_diagram.png)
 
@@ -151,7 +151,7 @@ The launching point for the tool chain is the mainDriver *(Automated_Tool_Chain_
 - **TURBULENCE_MODEL**: Specify the RANS Turbulence Models, "TURBULENCE_MODEL = SpalartAllmaras _or_ kEpsilon _or_ kOmega _or_ kOmegaSST".
 - **PHYSICAL_MODEL**: Specify the Near Wall Modelling, "PHYSICAL_MODEL = wallResolved" for y+ = 1 & "PHYSICAL_MODEL = wallModeled" for y+ >= 30 (i.e., using wall functions).
 
-The mainDriver will also generate a number of additional parameters based on these initial user inputs, which include the y+ value and turbulent quantities among others. Additional advanced parameters required for meshing, solving and post processing are also specified in the mainDriver and can be edited for a specific simulation setup.
+The mainDriver will also generate a number of additional parameters based on these initial user inputs, which include the y+ value and turbulent quantities among others. Additional advanced parameters required for meshing, solving and post processing are also specified in the mainDriver and can be edited for a specific simulation set-up.
 
 The mainDriver then calls instances of the classes ```createDirectories()```, ```callMeshing()```, ```callSolver()``` and ```callPostProcessing()``` to perform the four stages of the tool chain, i.e., creating directories, meshing, solving and post processing. The ```createDirectories()``` class creates the necessary OpenFOAM directories (*0/*, *constant/* and *system/*) for the next stages of the tool chain. The ```callMeshing()```, ```callSolver()``` and ```callPostProcessing()``` classes contain the methods necessary to carry out the next stages of the OpenFOAM pipeline. These classes in turn call several other classes as seen in the UML diagram.
 
