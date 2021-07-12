@@ -141,7 +141,7 @@ The launching point for the tool chain is the mainDriver *(Automated_Tool_Chain_
 - **REYNOLDS_NUMBER**: Specify the Value of Re Number.
 - **DENSITY**: Specify the Flow Density.
 - **START_TIME**: Specify the Simulation Start Time.
-- **TIME_STEP**: Specify the Simulation Time Step, if "TIME_DERIVATIVE = "steady"" -> TIME_STEP = 1 by default (No need to fill for any value).
+- **TIME_STEP**: Specify the Simulation Time Step, if "TIME_DERIVATIVE = steady" -> TIME_STEP = 1 by default (No need to fill for any value).
 - **END_TIME**: Specify the Simulation End Time.
 - **WRITE_INTERVAL**: Used to Control the timing of write output to file per every WRITE_INTERVAL time steps.
 - **NUMBER_OF_PROCESSORS**: Specify the Number of Processors (CPU), "NUMBER_OF_PROCESSORS = 1" for Serial Run & "NUMBER_OF_PROCESSORS > 1" for Parallel Run.
