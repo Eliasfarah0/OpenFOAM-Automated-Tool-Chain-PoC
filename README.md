@@ -167,7 +167,7 @@ This software project is provided under the MIT license, see the above accompany
 
 
 # Contributors
-This project was part of the Master of Science (MSc) degree in [Aerospace Computational Engineering](https://www.cranfield.ac.uk/courses/taught/aerospace-computational-engineering) at [Cranfield Univeristy](https://www.cranfield.ac.uk/) for the academic year 2019/2020, where the main and only contributors are: 
+This project was part of the Master of Science (MSc) degree in [Aerospace Computational Engineering](https://www.cranfield.ac.uk/courses/taught/aerospace-computational-engineering) at [Cranfield University](https://www.cranfield.ac.uk/) for the academic year 2019/2020, where the main and only contributors are: 
 - Vadim Maltsev (Student at Cranfield University UK, GitHub: [@VadimCRN](https://github.com/VadimCRN) & Email: V.Maltsev@cranfield.ac.uk)
 - Samali Liyanage (Student at Cranfield University UK, *No GitHub profile* & Email: Samali.Liyanage@cranfield.ac.uk)
 - Elias Farah (Student at Cranfield University UK, GitHub: [@Eliasfarah0](https://github.com/Eliasfarah0) & Email: E.Farah@cranfield.ac.uk)
