@@ -93,11 +93,11 @@ class gen0kBoundaryFile:
 			kinitialFile.write("\n		type		"+ str(self.kboundaryType[n]) + ";")
 			if self.kboundaryType[n]=="inletOutlet" :
 				kinitialFile.write("\n		inletValue	$internalField;")
-			elif self.kboundaryType[n] is not "cyclic":
-				if self.kboundaryType[n] is not "empty":
-					if self.kboundaryType[n] is not "symmetry":
-						if self.kboundaryType[n]=="fixedValue":
-							if self.defBC[n]=='cylinder':
+			elif self.kboundaryType[n] != "cyclic":
+				if self.kboundaryType[n] != "empty":
+					if self.kboundaryType[n] != "symmetry":
+						if self.kboundaryType[n]== "fixedValue":
+							if self.defBC[n]== 'cylinder':
 								kinitialFile.write("\n		value		uniform 1e-11;")
 							else:
 								kinitialFile.write("\n		value		uniform " + str(self.kIntensity) +  ";")
