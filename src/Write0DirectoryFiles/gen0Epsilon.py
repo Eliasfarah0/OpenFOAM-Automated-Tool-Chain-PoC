@@ -93,9 +93,9 @@ class gen0epsilonBoundaryFile:
 			epsiloninitialFile.write("\n		type		"+ str(self.epsilonboundaryType[n]) + ";")
 			if self.epsilonboundaryType[n]=="inletOutlet" :
 				epsiloninitialFile.write("\n		inletValue	$internalField;")
-			if	self.epsilonboundaryType[n] is not "cyclic":
-				if self.epsilonboundaryType[n] is not "empty":
-					if self.epsilonboundaryType[n] is not "symmetry": 
+			if self.epsilonboundaryType[n] != "cyclic":
+				if self.epsilonboundaryType[n] != "empty":
+					if self.epsilonboundaryType[n] != "symmetry": 
 						if self.epsilonboundaryType[n]=="fixedValue":
 							if self.defBC[n] == 'cylinder':
 								epsiloninitialFile.write("\n		value		uniform 1e-11;")
