@@ -102,9 +102,9 @@ class gen0NutBoundaryFile:
 			nutinitialFile.write("\n\n	"+ str(self.defBC[n]))
 			nutinitialFile.write("\n	{")
 			nutinitialFile.write("\n		type	"+ str(self.nutboundaryType[n]) + ";")
-			if self.nutboundaryType[n] is not "cyclic":
-				if self.nutboundaryType[n] is not "empty":
-					if self.nutboundaryType[n] is not "symmetry":
+			if self.nutboundaryType[n] != "cyclic":
+				if self.nutboundaryType[n] != "empty":
+					if self.nutboundaryType[n] != "symmetry":
 						nutinitialFile.write("\n		value	$internalField;")
 			nutinitialFile.write("\n	}")
 		nutinitialFile.write("\n}")
