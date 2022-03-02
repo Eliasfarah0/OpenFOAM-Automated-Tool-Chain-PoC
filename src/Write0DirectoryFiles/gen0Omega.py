@@ -93,9 +93,9 @@ class gen0OmegaBoundaryFile:
 			omegainitialFile.write("\n		type		"+ str(self.omegaboundaryType[n]) + ";")
 			if self.omegaboundaryType[n]=="inletOutlet":
 				omegainitialFile.write("\n		inletValue	$internalField;")
-			if	self.omegaboundaryType[n] is not "cyclic":
-				if self.omegaboundaryType[n] is not "empty":
-					if self.omegaboundaryType[n] is not "symmetry":
+			if	self.omegaboundaryType[n] != "cyclic":
+				if self.omegaboundaryType[n] != "empty":
+					if self.omegaboundaryType[n] != "symmetry":
 						if self.omegaboundaryType[n]=="fixedValue":
 							if self.defBC[n] == 'cylinder':
 								omegainitialFile.write("\n		value		uniform 1e-11;")
