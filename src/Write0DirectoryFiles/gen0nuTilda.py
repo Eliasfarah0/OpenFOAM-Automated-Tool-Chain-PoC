@@ -93,10 +93,10 @@ class gen0NuTildaBoundaryFile:
 			nuTildainitialFile.write("\n		type		"+ str(self.nuTildaboundaryType[n]) + ";")
 			if self.nuTildaboundaryType[n]=="inletOutlet" :
 				nuTildainitialFile.write("\n		inletValue	$internalField;")
-			if	self.nuTildaboundaryType[n] is not "slip":
-				if self.nuTildaboundaryType[n] is not "empty":
-					if self.nuTildaboundaryType[n] is not "symmetry":
-						if self.nuTildaboundaryType[n]=="fixedValue":
+			if self.nuTildaboundaryType[n] != "slip":
+				if self.nuTildaboundaryType[n] != "empty":
+					if self.nuTildaboundaryType[n] != "symmetry":
+						if self.nuTildaboundaryType[n]== "fixedValue":
 							if self.defBC[n] == 'cylinder':
 								nuTildainitialFile.write("\n		value		uniform 1e-11;")
 							else:
